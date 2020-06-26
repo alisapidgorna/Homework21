@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" parallel="tests">
+    <test name="TestParametersXMLHomework for GRID test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestParametersXMLHomework"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="TestParametersXMLHomework">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="TestParametersXMLHomework"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
